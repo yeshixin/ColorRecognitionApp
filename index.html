@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Recognition Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 開始畫面 -->
+    <div id="start-screen" class="screen">
+        <div id="crosshair">+</div>
+        <div id="start-text">START</div>
+    </div>
+
+    <!-- 緩衝畫面 -->
+    <div id="buffer-screen" class="screen" style="display: none;">
+        <div id="buffer-text">+</div>
+    </div>
+
+    <!-- 問題畫面 -->
+    <div id="question-screen" class="screen" style="display: none;">
+        <div id="question-text"></div>
+    </div>
+
+    <!-- 選項畫面 -->
+    <div id="options-screen" class="screen" style="display: none;">
+        <div id="options-container">
+            <button id="option1" class="option-button"></button>
+            <button id="option2" class="option-button"></button>
+        </div>
+    </div>
+
+    <!-- 檔案上傳 -->
+    <div id="file-upload">
+        <label for="file-input">請選擇 Excel 檔案：</label>
+        <input type="file" id="file-input" accept=".xlsx">
+    </div>
+
+    <!-- 引入 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
